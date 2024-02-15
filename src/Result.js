@@ -1,8 +1,7 @@
 import React from 'react'
 
-function Result(props) {
-    const {secretNum,term} =props
-    console.log(secretNum,term);
+function Result({secretNum,term}) {
+    
     let result;
 
  if(term){
@@ -11,18 +10,19 @@ function Result(props) {
         result ="Higher";
     }else if(term < secretNum){
         result ='Lower';
-    }else if( term !== secretNum){
+    }else if( term == secretNum){
         result ='Yippe! Correct';
-    }   
+    }    
     else{
         result="Please enter the Valid Input"
     }
  }
- 
+
+
     
   return (
     <>
-         <h2 className='head'>You Guessed number: {result}</h2>
+         <h2 className='head'>You Guessed:{result}</h2>
     </>
    
 
