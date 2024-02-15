@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="container">
        <div className='head'>
-            <label htmlFor='term'>Guess the number 1 to 10 Ans:{secretNum}</label>
+            <label htmlFor='term'>Guess the number 1 to 10 </label>
        </div>
        <input
             type="text"
